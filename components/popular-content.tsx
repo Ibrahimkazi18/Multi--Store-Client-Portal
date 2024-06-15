@@ -72,7 +72,7 @@ const PopularContent = ({data} : PopularContentProps) => {
         </div>
 
         <CardDescription className="text-center px-2 my-2">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta alias exercitationem cum quos
+            {data.description || "No Description"}
         </CardDescription>
 
         <div className="w-full flex items-center px-2 mt-4 gap-3">

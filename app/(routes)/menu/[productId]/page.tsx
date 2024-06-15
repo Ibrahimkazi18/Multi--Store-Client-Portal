@@ -18,7 +18,7 @@ const ProductPage = async ({params} : ProductPageProps) => {
 
   const product = await getProduct(params.productId)
   const suggestedProducts = await getProducts({category : product?.category})
-
+  console.log(product)
   return (
     <div>
         <Container className="bg-white rounded-lg my-4 px-4">

@@ -10,6 +10,7 @@ interface Query {
     cuisine?: string;
     category?: string;
     kitchen?: string;
+    description?: string;
 }
 
 const getProducts = async (query : Query) : Promise<Products[]> => {
@@ -22,10 +23,9 @@ const getProducts = async (query : Query) : Promise<Products[]> => {
             cuisine : query.cuisine,
             category : query.category,
             kitchen : query.kitchen,
+            description : query.description,
         }
     })
-
-    console.log(url)
 
     const res = await fetch(url)
 

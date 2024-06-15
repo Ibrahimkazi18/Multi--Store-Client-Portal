@@ -31,8 +31,7 @@ const Info = ({product} : InfoProps) => {
 
         <div className="mt-3 flex items-end justify-between">
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ab ex corporis vel magnam saepe.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sunt tempore ea, asperiores quasi possimus.
+                {product.description || "No Description" }
             </p>
         </div>
 

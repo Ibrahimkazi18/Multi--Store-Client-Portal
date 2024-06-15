@@ -15,7 +15,6 @@ const HomePage = async () => {
 
   const products = await getProducts({ isFeatured : true })
   const featuredProducts = await filterProducts(products)
-  // console.log(products)
 
   return (
     <>
